@@ -5,15 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ConstitúyeteRD - Constitución de Empresas en República Dominicana</title>
   <meta name="description" content="Constituye tu SRL o EIRL en República Dominicana de forma rápida y segura. Asesoría legal y fiscal integral con el respaldo de Anchi Advisors.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     }
 
     body {
@@ -71,14 +68,12 @@
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      transition: all 0.2s ease;
       font-size: 0.9rem;
       box-shadow: 0 4px 6px -1px rgba(37, 211, 102, 0.2);
     }
 
     .btn-header:hover {
       background-color: #22c55e;
-      transform: translateY(-1px);
     }
 
     /* Hero Section */
@@ -151,7 +146,6 @@
       display: inline-flex;
       align-items: center;
       gap: 0.75rem;
-      transition: all 0.2s ease;
       box-shadow: 0 10px 15px -3px rgba(37, 211, 102, 0.3);
       width: 100%;
       justify-content: center;
@@ -163,7 +157,6 @@
 
     .btn-primary:hover {
       background-color: #22c55e;
-      transform: translateY(-2px);
     }
 
     /* Benefits */
@@ -204,12 +197,6 @@
       border: 1px solid #e2e8f0;
       border-radius: 1rem;
       padding: 2rem;
-      transition: all 0.2s ease;
-    }
-
-    .card:hover {
-      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
-      border-color: #cbd5e1;
     }
 
     .card-icon {
@@ -309,4 +296,252 @@
       align-items: center;
       gap: 0.5rem;
       font-size: 0.95rem;
-      color: #334
+      color: #334155;
+    }
+
+    .pkg-features li::before {
+      content: "✓";
+      color: #0284c7;
+      font-weight: 800;
+    }
+
+    /* Process */
+    .process {
+      padding: 4rem 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .step-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .step-item {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border: 1px solid #e2e8f0;
+    }
+
+    .step-number {
+      background: #0284c7;
+      color: #ffffff;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    /* FAQ */
+    .faq {
+      background: #ffffff;
+      padding: 4rem 1.5rem;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #f1f5f9;
+      padding-bottom: 1.5rem;
+    }
+
+    .faq-item h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #0f172a;
+    }
+
+    .faq-item p {
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer strong {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <a href="#" class="logo">
+        <span class="logo-main">ConstitúyeteRD</span>
+        <span class="logo-sub">Un servicio de Anchi Advisors</span>
+      </a>
+      <a href="https://wa.me/18496078066?text=Hola,%20quiero%20consultar%20sobre%20la%20constituci%C3%B3n%20de%20mi%20empresa" class="btn-header" target="_blank">
+        📲 Consultar por WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="badge">⚖️ Asesoría Legal &amp; Fiscal Especializada</div>
+      <h1>Constituye tu Empresa en RD <span>Sin Complicaciones ni Demoras</span></h1>
+      <p>Nos encargamos de todo el proceso de formalización: Reserva de Nombre en ONAPI, Cámara de Comercio, Registro Mercantil y RNC con Comprobantes Fiscales (NCF).</p>
+      <div class="cta-group">
+        <a href="https://wa.me/18496078066?text=Hola,%20quiero%20iniciar%20el%20proceso%20de%20constituci%C3%B3n%20de%20mi%20empresa" class="btn-primary" target="_blank">
+          🟢 Iniciar Trámite por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section class="features">
+    <div class="section-title">
+      <h2>¿Por qué formalizar con ConstitúyeteRD?</h2>
+      <p>Garantizamos rapidez, transparencia y respaldo contable continuo.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <h3>Tiempo Récord</h3>
+        <p>Agilizamos los procesos ante ONAPI y la Cámara de Comercio para entregarte tu expediente sin demoras.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Enfoque Fiscal Real</h3>
+        <p>Al nacer respaldado por Anchi Advisors, tu empresa se constituye alineada a las normas de la DGII desde el día uno.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🛡️</div>
+        <h3>Transparencia Absoluta</h3>
+        <p>Sin costos ocultos. Te desglosamos las tasas gubernamentales y nuestros honorarios con total claridad.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paquetes -->
+  <section class="packages">
+    <div class="packages-container">
+      <div class="section-title">
+        <h2>Tipos de Sociedades Populares</h2>
+        <p>Selecciona la estructura ideal según las necesidades de tu negocio.</p>
+      </div>
+      <div class="grid-2">
+        
+        <!-- SRL -->
+        <div class="pkg-card featured">
+          <div class="pkg-tag">Más Solicitada</div>
+          <div class="pkg-title">Sociedad SRL</div>
+          <div class="pkg-subtitle">Ideal para comercios, empresas con socios y proyectos de expansión.</div>
+          <ul class="pkg-features">
+            <li>Protección del patrimonio personal</li>
+            <li>Registro de Nombre Comercial en ONAPI</li>
+            <li>Redacción de Estatutos y Actas Asamblearias</li>
+            <li>Certificado de Registro Mercantil</li>
+            <li>Obtención de RNC y Comprobantes Fiscales (DGII)</li>
+          </ul>
+          <a href="https://wa.me/18496078066?text=Hola,%20me%20interesa%20constituir%20una%20empresa%20SRL" class="btn-primary" target="_blank">
+            Constituir una SRL
+          </a>
+        </div>
+
+        <!-- EIRL -->
+        <div class="pkg-card">
+          <div class="pkg-title">Empresa EIRL</div>
+          <div class="pkg-subtitle">Diseñada para emprendedores o profesionales independientes que operan solos.</div>
+          <ul class="pkg-features">
+            <li>Unipersonal (Un solo dueño)</li>
+            <li>Separación de responsabilidad patrimonial</li>
+            <li>Búsqueda y Registro en ONAPI</li>
+            <li>Obtención del Registro Mercantil</li>
+            <li>Alta de RNC en la DGII para facturar</li>
+          </ul>
+          <a href="https://wa.me/18496078066?text=Hola,%20me%20interesa%20constituir%20una%20empresa%20EIRL" class="btn-primary" style="background-color: #0284c7;" target="_blank">
+            Constituir una EIRL
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pasos -->
+  <section class="process">
+    <div class="section-title">
+      <h2>Tu Empresa Lista en 3 Pasos</h2>
+      <p>Nosotros hacemos todo el trabajo pesado por ti.</p>
+    </div>
+    <div class="step-list">
+      <div class="step-item">
+        <div class="step-number">1</div>
+        <div>
+          <h3>Asesoría y Validación de Nombre</h3>
+          <p>Nos envías las opciones de nombre comercial y verificamos de inmediato su disponibilidad en ONAPI.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-number">2</div>
+        <div>
+          <h3>Elaboración de Expediente</h3>
+          <p>Redactamos los estatutos, formularios legales y realizamos el depósito formal en las instituciones gubernamentales.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-number">3</div>
+        <div>
+          <h3>Entrega y Lista para Facturar</h3>
+          <p>Te entregamos el registro mercantil y el RNC configurado ante la DGII para que empieces a operar legalmente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preguntas Frecuentes -->
+  <section class="faq">
+    <div class="faq-container">
+      <div class="section-title">
+        <h2>Preguntas Frecuentes</h2>
+      </div>
+      <div class="faq-item">
+        <h3>¿Cuánto tiempo toma constituir una SRL en República Dominicana?</h3>
+        <p>El proceso suele completarse en un plazo promedio de 10 a 15 días hábiles, dependiendo de los tiempos de respuesta de ONAPI y la Cámara de Comercio correspondiente.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Cómo verifico si mi nombre comercial está libre?</h3>
+        <p>Nosotros realizamos la consulta formal por ti directamente en el sistema de ONAPI para asegurar que no existan conflictos o marcas similares registradas.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Qué documentos necesito para comenzar?</h3>
+        <p>Únicamente copia de cédula (o pasaporte si hay socios extranjeros) de los integrantes y la definición de las actividades principales de la empresa.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>ConstitúyeteRD</strong> es un servicio especializado de <strong>Anchi Advisors</strong>.</p>
+    <p>Santo Domingo, República Dominicana.</p>
+  </footer>
+
+</body>
+</html>
